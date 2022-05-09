@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header id="header-title">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">
+            Thank you for taking the time to help us improve the
+            platform
+        </p>
+    
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input required type="text" id="name" placeholder="Enter your name" />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input required type="email" id="email" placeholder="Enter your email" />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="age">Age</label>
+                <input min="10" max="99" type="number" id="number" placeholder="Age" />
+            </div>
+            <div class="form-group">
+                <label >Which option best describes your current role?</label>
+                <select id="dropdown">
+                    <option selected disabled>Select current role</option>
+                    <option name="student" value="student">Student</option>
+                    <option name="job" value="job">Full Time Job</option>
+                    <option name="learner" value="learner">Full Time Learner</option>
+                    <option name="nottosay" value="nottosay">Pref not to say</option>
+                    <option name="other" value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label >Would you recommend freeCodeCamp to a friend?</label>
+                
+                <label for="definitely"><input type="radio" id="definitely" name="radio-btn" value="definitely" />Definitely</label>
+                <label for="maybe">
+                    <input type="radio" id="maybe" name="radio-btn" value="maybe"/>Maybe</label>
+                <label for="notsure">
+                    <input type="radio" id="notsure" name="radio-btn" value="notsure"/>Not sure</ş>
+            </div>
+            <div class="form-group">
+                <label >What is your favorite feature of freeCodeCamp?</label>
+                <select id="dropdown">
+                    <option selected disabled>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option name="project" value="project">Project</option>
+                    <option name="community" value="community">Community</option>
+                    <option name="opensource" value="opensource">Open Source</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label >What would you like to see improved? (Check all that apply)</label>
+                
+                <label for="frontend"><input type="checkbox" value="frontend"name="frontend" id="frontend">Front-end Projects</label>
+                
+                <label for="backhand"><input type="checkbox" value="backhand"name="backhand" id="backhand">Back-end Projects</label>
+                
+                <label for="datavisualization"><input type="checkbox" value="datavisualization"name="datavisualization" id="datavisualization">Data Visualization</label>
+                
+                <label for="Challenges"><input type="checkbox" value="Challenges"name="Challenges" id="Challenges">Challenges</label>
+                
+                <label for="opensourcecommunity"><input type="checkbox" value="opensourcecommunity"name="opensourcecommunity" id="opensourcecommunity">Open Source Community</label>
+                
+                <label for="gitterhelprooms"><input type="checkbox" value="gitterhelprooms"name="gitterhelprooms" id="gitterhelprooms">Gitter help rooms</label>
+                
+                <label for="videos"><input type="checkbox" value="videos"name="videos" id="videos">Videos</label>
+                
+                <label for="citymeetups"><input type="checkbox" value="citymeetups"name="citymeetups" id="citymeetups">City Meetups</label>
+                <label for="wiki"><input type="checkbox" value="wiki"name="wiki" id="wiki"/>Wiki
+                </label>
+                <label for="forum">
+                <input type="checkbox" value="forum"name="forum" id="forum">  Forum
+                </label>               
+                <label for="courses"><input type="checkbox" value="courses"name="courses" id="courses">Additional Courses
+                </label>          
+            </div>
+            <div class="form-group">
+                <label >Any comments or suggestions?</label>
+                <textarea name="" id="" cols="50" rows="6" placeholder="Enter your comment here..."></textarea>           
+            </div>
+            <button id="submit" type="submit" >Submit</button>
+    </div>
+        <script src="app.js"></script>
+</body>
+
+</html>
